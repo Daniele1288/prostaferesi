@@ -12,6 +12,12 @@ public class generalInfo : MonoBehaviour
 
     public static bool controller = false;
 
+    public GameObject player;
+    public GameObject mirino;
+
+    public static Transform playerPosition;
+    public static Transform mirinoPosition;
+
     private void Awake() 
     {
         width = Screen.width;
@@ -32,5 +38,9 @@ public class generalInfo : MonoBehaviour
         {
             controller = true;
         }
+
+        playerPosition = player.GetComponent<Transform>();
+        mirinoPosition = mirino.GetComponent<Transform>();
+    
     }
 }

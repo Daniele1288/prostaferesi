@@ -36,7 +36,6 @@ public class mirino : MonoBehaviour
 
         else
         {
-            Debug.Log(generalInfo.mouseX);
 
             transform.position = new Vector2(playerPosition.position.x + (spostamentoX * incrementoDistanzaMirino),
                                             playerPosition.position.y + (spostamentoY * incrementoDistanzaMirino));

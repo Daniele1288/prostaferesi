@@ -7,8 +7,8 @@ public class player : MonoBehaviour
     public static float x;
     public static float y;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
         x = transform.position.x;
         y = transform.position.y;
