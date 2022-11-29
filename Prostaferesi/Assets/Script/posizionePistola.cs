@@ -11,10 +11,9 @@ public class posizionePistola : MonoBehaviour
     Transform playerPosition;
     Transform mirinoPosition;
 
-    float tan;
+    public static float tan;
     float angolo;
-    float rotation;
-    float rotationX;
+    public static float rotation;
 
     void Start()
     {

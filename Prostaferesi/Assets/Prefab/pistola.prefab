@@ -82,6 +82,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2479938628235408996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4639690905657624158}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4639690905657624158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479938628235408996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.22, y: 0.42, z: 0.0020298362}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7858728324903902983}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4295631154830868624
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7858728324903902983}
-  - component: {fileID: -5101090535253974115}
+  - component: {fileID: 2034721874592336729}
   m_Layer: 0
   m_Name: pistola
   m_TagString: Untagged
@@ -277,10 +307,11 @@ Transform:
   - {fileID: 31734726111245237}
   - {fileID: 7943169994594381697}
   - {fileID: 6002142582863858713}
+  - {fileID: 4639690905657624158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5101090535253974115
+--- !u!114 &2034721874592336729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,7 +320,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5900268704632287635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92a75cf692f83b4a94a70b971ffb28d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ed6006713c2fdd4592ad54759f3ee1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 5900268704632287635}
+  proiettile: {fileID: 4205287585579721398, guid: 61868e9c1076f5a469e03fe8b3ede168, type: 3}
+  firePoint: {fileID: 2479938628235408996}
+  delay: 1
+  colpiMax: 12
